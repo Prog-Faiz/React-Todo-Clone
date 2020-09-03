@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.app__header {
+  background-color: #364f6b;
+  height: 200px;
+}
+
+.app__headerText {
+  text-align: center;
+  padding-top: 10px;
+  color: #ffffff;
+}
+
+.app__content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.app__addTodo {
+  position: relative;
+  top: -60px;
+  width: 200px;
+  margin-left: 20px;
+  box-shadow: 2px 3px 8px -1px rgba(71, 70, 70, 0.2), 0px 1px 1px 0px rgba(71, 70, 70, 0.14), 0px 1px 3px 0px rgba(71, 70, 70, 0.12);
+  border-bottom: 1px solid rgba(196, 193, 193, 0.829);
+  border-radius: 8px;
+}
+
+.app__addTodo > div {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.app__addTodo > div > button {
+  color: #132942;
+  background-color: #364f6b;
+  align-self: center;
+  margin-bottom: 8px;
+}
+
+.app__cardText {
+  color: #132942;
+  align-self: center;
+}
+
+.app__addForm {
+  background-color: #ffffff;
+  position: sticky;
+  height: 400px;
+  max-width: 700px;
+  margin: 160px auto;
+  overflow-y: scroll;
+  color: #364f6b;
+}
+
+.app__addForm > form {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.app__formTitle > div {
+  color: #364f6b;
+}
+
+.app__formTodo > div {
+  color: #364f6b;
+}
+
+.app__addForm button {
+  margin-top: -5px;
+  background-color: #132942;
+  border-radius: 8px;
+}
+
+.app__addForm button:hover {
+  background-color: #364f6b;
+}
+
+.app__addForm > ul > li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.app__todosGrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+@media(max-width: 720px) {
+  .app__addTodo {
+    position: relative;
+    top: -60px;
+    width: 200px;
+    box-shadow: 2px 3px 8px -1px rgba(71, 70, 70, 0.2), 0px 1px 1px 0px rgba(71, 70, 70, 0.14), 0px 1px 3px 0px rgba(71, 70, 70, 0.12);
+    border-bottom: 1px solid rgba(196, 193, 193, 0.829);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app__todosGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

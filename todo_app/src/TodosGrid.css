@@ -1,0 +1,83 @@
+.todosGrid__cardEdit,
+.todosGrid__editTodo {
+    background-color: white;
+    position: sticky;
+    height: 400px;
+    max-width: 700px;
+    margin: 220px auto;
+    overflow-y: scroll;
+}
+
+.todosGrid__todoCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid rgba(19, 18, 18, 0.445);
+  box-shadow: 2px 3px 8px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12) !important;
+  margin: 20px;
+}
+
+.todosGrid__title {
+  flex: 1;
+  font-weight: 500;
+  color: #132942;
+}
+
+.todosGrid__todoList {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px !important;
+}
+
+.todosGrid__todoList > div > svg {
+  margin: 5px;
+}
+
+.todosGrid__cardEdit > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.todosGrid__formTodo > div > input {
+  color: #132942;
+}
+
+.todosGrid__cardEdit > form > button {
+  margin-left: 10px;
+  margin-top: -5px;
+  border-radius: 8px;
+  background-color: #132942;
+}
+
+.todosGrid__cardEdit > form > button:hover {
+  background-color: #364f6b;
+}
+
+.todosGrid__editTodo {
+  height:max-content;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.todosGrid__editTodo > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todosGrid__editTodo > form > div > div > input {
+  color: #132942;
+}
+
+.todosGrid__editTodo > form > button {
+  margin-left: 10px;
+  margin-top: -5px;
+  border-radius: 8px;
+  background-color: #132942;
+}
+
+.todosGrid__editTodo > form > button:hover {
+  background-color: #364f6b;
+}
